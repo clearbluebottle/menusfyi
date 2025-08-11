@@ -1,7 +1,7 @@
-import { Card } from '@/components/ui/card';
-import { RestaurantInfo } from '@/components/restaurant_info';
-
-export default function Home() {
+export default async function Home({children }: {children: React.ReactNode}) {
   return (
-    <RestaurantInfo />);
+    <>
+      {children}
+    </>
+  );
 }
